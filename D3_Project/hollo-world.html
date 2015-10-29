@@ -25,14 +25,23 @@
         //var divs = d3.selectAll('div');
         //divs.style('background-color', 'red');
 
+        //d3.selectAll('div')
+        //.style('background-color', function (d, i) {
+        //    if (Math.random() > 0.5) {
+        //        return 'red';
+        //    } else {
+        //        return 'blue';
+        //    }
+        //});
+
         d3.selectAll('div')
-        .style('background-color', function (d, i) {
-            if (Math.random() > 0.5) {
-                return 'red';
-            } else {
-                return 'blue';
-            }
-        });
+            .style('background-color', function (d, i) {
+                if (i === 1) {
+                    return 'blue';
+                } else {
+                    return 'green';
+                }
+            });
     </script>
 
    
