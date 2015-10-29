@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bar-with-data.html" />
     <Content Include="hollo-world.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
