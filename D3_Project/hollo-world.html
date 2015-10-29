@@ -6,8 +6,35 @@
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 <body>
+    <h1>Hello World</h1>
+
     <script>
         d3.select('body').append('h1').text('Hello World!');
     </script>
+
+    <div>Hello</div>
+    <div>World</div>
+    <div>Wow</div>
+    <script>
+        //var divs = document.getElementsByTagName('div');
+        //for(var i = 0; i < divs.length; i++)
+        //{
+        //    divs[i].style.backgroundColor = 'blue';
+        //}
+
+        //var divs = d3.selectAll('div');
+        //divs.style('background-color', 'red');
+
+        d3.selectAll('div')
+        .style('background-color', function (d, i) {
+            if (Math.random() > 0.5) {
+                return 'red';
+            } else {
+                return 'blue';
+            }
+        });
+    </script>
+
+   
 </body>
 </html>
